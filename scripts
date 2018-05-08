@@ -1,0 +1,13 @@
+#To programmatically disable a job
+agv$ curl -X POST --user <jenkins_username>:<jenkins_API_key> http://<jenkins_server_url>/job/<your_jenkins_job_name>/disable
+ex:- curl -X POST --user admin:bec08d8d006ce66b94955cc6b96aeeac http://107.22.154.235:8080/jenkins/job/test/disable
+
+#Similarly to enable a Job
+agv$ agv$ curl -X POST --user <jenkins_username>:<jenkins_API_key> http://<jenkins_server_url>/job/<your_jenkins_job_name>/enable
+
+#To Delete a Job
+agv$ curl -X POST --user <jenkins_username>:<jenkins_API_key> http://<jenkins_server_url>/job/<your_jenkins_job_name>/doDelete
+
+#To build a job
+ex:- curl -X POST --user admin:bec08d8d006ce66b94955cc6b96aeeac http://107.22.154.235:8080/jenkins/job/test/build
+
